@@ -2,9 +2,14 @@ import os
 import re
 
 import sys
-sys.path.append("..")  # 先跳出当前目录
-from core.nlp import NLP
-from core.extractor import Extractor
+
+project_path = \
+    os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../'))
+
+sys.path.insert(0, project_path)
+
+from sscode.core.nlp import NLP
+from sscode.core.extractor import Extractor
 
 if __name__ == '__main__':
     input_path = '../../data/input_text.txt'  # 输入的文本文件
