@@ -28,26 +28,31 @@ class WordUnit:
 
     def get_lemma(self):
         return self.lemma
+
     def set_lemma(self, lemma):
         self.lemma = lemma
 
     def get_postag(self):
         return self.postag
+
     def set_postag(self, postag):
         self.postag = postag
 
     def get_head(self):
         return self.head
+
     def set_head(self, head):
         self.head = head
 
     def get_head_word(self):
         return self.head_word
+
     def set_head_word(self, head_word):
         self.head_word = head_word
 
     def get_dependency(self):
         return self.dependency
+
     def set_dependency(self, dependency):
         self.dependency = dependency
 

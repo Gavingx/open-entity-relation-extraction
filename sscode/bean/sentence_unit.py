@@ -1,6 +1,6 @@
 import sys
 sys.path.append("..")  # 先跳出当前目录
-from bean.word_unit import WordUnit
+from sscode.bean.word_unit import WordUnit
 
 class SentenceUnit:
     """句子单元组成，每行为一个词单元，并获得每个词头部的词单元

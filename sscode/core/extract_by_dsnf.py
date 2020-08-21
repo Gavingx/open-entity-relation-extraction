@@ -1,8 +1,8 @@
 import sys
 sys.path.append("..")  # 先跳出当前目录
-from bean.word_unit import WordUnit
-from bean.sentence_unit import SentenceUnit
-from tool.append_to_json import AppendToJson
+from sscode.bean.word_unit import WordUnit
+from sscode.bean.sentence_unit import SentenceUnit
+from sscode.tool.append_to_json import AppendToJson
 
 class ExtractByDSNF:
     """根据DSNF(Dependency Semantic Normal Forms)进行知识抽取"""

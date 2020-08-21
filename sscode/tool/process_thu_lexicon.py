@@ -26,6 +26,7 @@ def get_lexicon(input_path, output_path,):
         fin.close()
         fout.close()
 
+
 if __name__ == '__main__':
     # 删除已存在的词典文件并重新创建
     if os.path.exists(output_path) and os.path.isfile(output_path):

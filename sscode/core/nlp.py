@@ -8,9 +8,9 @@ import os
 
 import sys
 sys.path.append("..")  # 先跳出当前目录
-from bean.word_unit import WordUnit
-from bean.sentence_unit import SentenceUnit
-from core.entity_combine import EntityCombine
+from sscode.bean.word_unit import WordUnit
+from sscode.bean.sentence_unit import SentenceUnit
+from sscode.core.entity_combine import EntityCombine
 
 
 class NLP:

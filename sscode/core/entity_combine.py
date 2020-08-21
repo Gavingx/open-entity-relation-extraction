@@ -1,6 +1,6 @@
 import sys
 sys.path.append("..")  # 先跳出当前目录
-from bean.word_unit import WordUnit
+from sscode.bean.word_unit import WordUnit
 
 class EntityCombine:
     """将分词词性标注后得到的words与netags进行合并"""
@@ -90,7 +90,7 @@ class EntityCombine:
         """
         flag = False  # 默认该词标志不为实体
         # 地名，机构名，人名，其他名词，缩略词
-        if netag in {'ns', 'ni', 'nh', 'nz', 'j'}:
+        if netag in {'ns', 'ni', 'nh', 'nz', 'j', 'n'}:
             flag = True
         return flag
 

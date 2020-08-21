@@ -1,9 +1,9 @@
 import sys
 sys.path.append("..")  # 先跳出当前目录
-from bean.word_unit import WordUnit
-from bean.sentence_unit import SentenceUnit
-from bean.entity_pair import EntityPair
-from core.extract_by_dsnf import ExtractByDSNF
+from sscode.bean.word_unit import WordUnit
+from sscode.bean.sentence_unit import SentenceUnit
+from sscode.bean.entity_pair import EntityPair
+from sscode.core.extract_by_dsnf import ExtractByDSNF
 
 class Extractor:
     """抽取生成知识三元组
@@ -87,7 +87,7 @@ class Extractor:
             *: bool，实体(True)，非实体(False)
         """
         # 候选实体词性列表
-        entity_postags = {'nh', 'ni', 'ns', 'nz', 'j'}
+        entity_postags = {'nh', 'ni', 'ns', 'nz', 'j', 'n'}
         if entry.postag in entity_postags:
             return True
         else:
